@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 
 int main()
 {
@@ -7,7 +7,7 @@ int main()
         int size = sizeof(vect)/sizeof(vect[0]);
         int sum = 16, l = 0, c = 0, a = 0, b = 0, result, verification = 0;
 
-        printf("Sum: %d\n", sum);
+        printf("Sum value: %d\n", sum);
         printf("Array size: %d\n", size);
 
 for (l = 0; l<size; l++){
@@ -22,13 +22,13 @@ for (l = 0; l<size; l++){
                         result = vect[l]+vect[a];
                         verification++;
                         if (result >= sum){
-                                printf("First two values that added are equal or greater then %d are: %d+%d = %d \n", sum, vect[l], v$
+                                printf("First two values that added are equal or greater then %d are: %d+%d = %d \n", sum, vect[l], vect[a], result);
                                 printf("Number of checks: %d\n", verification);
                                 return 0;
                         }
                         a++;
                 }
         }
-        return 0;
-        //system("pause");
+        //return 0;
+        system("pause");
 }
